@@ -7,7 +7,7 @@ const Products = () => {
   const [loading, error, data] = useFetch('https://dummyjson.com/products')
 
   const navigate = useNavigate()
-  console.log(data)
+  // console.log(data)
 
   return (
     <div className='container'>

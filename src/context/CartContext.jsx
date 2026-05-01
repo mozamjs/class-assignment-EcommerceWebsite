@@ -14,6 +14,7 @@ export const CartProvider = ({ children }) => {
         cart.map((item) =>
           item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
+            
             : item
         )
       );
@@ -54,3 +55,4 @@ export const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
+
